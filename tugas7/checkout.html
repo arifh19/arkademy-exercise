@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Warung Kopi</title>
+</head>
+
+<body>
+    <div class="content">
+        <aside class="left-side">
+            <header class="head-container">
+                <img src="assets/menu.png" class="burger-menu" alt="menu">
+                <h1>Foods Item</h1>
+                <img src="assets/magnifying-glass.png" class="search" alt="search">
+            </header>
+            <div class="main">
+                <aside class="sidebar">
+                    <ul>
+                        <li><a href="index.html"><img src="assets/fork.png" alt="fork"></a></li>
+                        <li><img src="assets/clipboard.png" alt="clipboard"></li>
+                        <li id="add"><img src="assets/add.png" alt="add"></li>
+                    </ul>
+                </aside>
+                <main class="foods">
+                    <article class="imageandtext image_grid">
+                        <label>
+                            <img src="assets/jeremy-ricketts-6ZnhM-xBpos-unsplash.png">
+                            <input type="radio" name="satu">
+                            <span class="caption">
+                            </span>
+                        </label>
+                        <p>Espresso</p>
+                        <p class="harga">Rp. 10.000</p>
+                    </article>
+                    <article class="imageandtext image_grid">
+                        <label>
+                            <img src="assets/bear.png">
+                            <input type="radio" name="dua">
+                            <span class="caption">
+                            </span>
+                        </label>
+                        <p>Coffe Latte</p>
+                        <p class="harga">Rp. 15.000</p>
+                    </article>
+    
+                    <article>
+                        <img src="assets/firdaus-roslan-pN769u0KHNA-unsplash.png" alt="firdaus">
+                        <p>Cappucino</p>
+                        <p class="harga">Rp. 5.000</p>
+                    </article>
+                    <article>
+                        <img src="assets/redvelvet.png" alt="redvelvet">
+                        <p>Red Velvet Latte</p>
+                        <p class="harga">Rp. 33.000</p>
+                    </article>
+                    <article>
+                        <img src="assets/chocorum.png" alt="chocorum">
+                        <p>Choco Rhum</p>
+                        <p class="harga">Rp. 28.000</p>
+                    </article>
+                    <article>
+                        <img src="assets/blackforest.png" alt="blackforest">
+                        <p>Black Forest</p>
+                        <p class="harga">Rp. 30.000</p>
+                    </article>
+                    <article>
+                        <img src="assets/chickenkatsu.png" alt="chickenkatsu">
+                        <p class="name">Chicken Katsu Dabu-dabu</p>
+                        <p class="harga">Rp. 60.000</p>
+                    </article>
+                    <article>
+                        <img src="assets/salmon.png" alt="salmon">
+                        <p>Salmon Truffle Teriyaki</p>
+                        <p class="harga">Rp. 60.000</p>
+                    </article>
+                    <article>
+                        <img src="assets/wiener.png" alt="wiener">
+                        <p>Wiener Schnitzel</p>
+                        <p class="harga">Rp. 69.000</p>
+                    </article>
+                </main>
+            </div>
+        </aside>
+        <aside class="right-side">
+            <header>
+                <h1>Cart <span class="jumlah-cart">
+                        <p>3</p>
+                    </span></h1>
+            </header>
+            <main>
+                <div class="container mt-10 flex-column">
+                    <div class="cart-item">
+                        <div class="cart-row">
+                            <div class="select-img">
+                                <img class="list-cart" src="assets/bear.png" alt="bear">
+                            </div>
+                            <div class="select-description">
+                                <p>Coffee Latte</p>
+                                <div class="count-price">
+                                    <div class="input-group">
+                                        <button class="btn minus">-</button>
+                                        <input disabled class="form-control total" value="1">
+                                        <button class="btn plus">+</button>
+                                    </div>
+                                    <p class="price">Rp. 15.000</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="cart-row mt-20">
+                            <div class="select-img">
+                                <img class="list-cart" src="assets/blackforest.png" alt="blackforest">
+                            </div>
+                            <div class="select-description">
+                                <p>Black Forest</p>
+                                <div class="count-price">
+                                    <div class="input-group">
+                                        <button class="btn minus">-</button>
+                                        <input disabled class="form-control total" value="1">
+                                        <button class="btn plus">+</button>
+                                    </div>
+                                    <p class="price">Rp. 30.000</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="cart-row mt-20">
+                            <div class="select-img">
+                                <img class="list-cart" src="assets/salmon.png" alt="salmon">
+                            </div>
+                            <div class="select-description">
+                                <p>Salmon Truffle</p>
+                                <div class="count-price">
+                                    <div class="input-group">
+                                        <button class="btn minus">-</button>
+                                        <input disabled class="form-control total" value="1">
+                                        <button class="btn plus">+</button>
+                                    </div>
+                                    <p class="price">Rp. 60.000</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-checkout">
+                        <div class="cart-total"><span>Total :</span> <span>Rp. 105.000*</span></div>
+                        <p>*Belum termasuk ppn</p>
+                        <button id="checkout" class="btn btn-primary checkout-btn">Checkout</button>
+                        <a href="index.html" class="btn btn-danger cancel-btn">Cancel</a>
+                    </div>
+                </div>
+            </main>
+        </aside>
+    </div>
+     <!-- Modal Checkout -->
+    <div class="modal" id="checkoutModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="row">
+              <div class="col-6">
+                  <h4>Checkout</h4>
+                  <p>Cashier : Pevita Pearce</p>
+              </div>
+              <div class="col-6">
+                  <p style="text-align: right;">Receipt no: # 010410919</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-6">
+                  <h6>Coffee Latte 1x</h6>
+                  <h6>Black Forest 1x</h6>
+                  <h6>Salmon Truffle Teriyaki 1x</h6>
+                  <h6>Ppn 10%</h6>
+                  <br>
+                  <h6>Payment: Cash</h6>
+              </div>
+              <div class="col-6 right">
+                  <h6>Rp. 15.000</h6>
+                  <h6>Rp. 30.000</h6>
+                  <h6>Rp. 60.000</h6>
+                  <h6>Rp. 10.500</h6>
+                  <h6>Total : Rp. 115.500</h6>
+              </div>
+          </div>
+          <a href="index.html" class="btn btn-primary checkout-btn">Print</a>
+          <h6 style="text-align: center; margin-top:10px">Or</h6>
+          <a class="btn btn-danger cancel-btn" style="margin-top:1px">Send Email</a>
+        </div>
+    </div>
+      
+    <div class="modal" id="addModal">
+       <!--  Modal Add -->
+      <div class="modal-content">
+        <div class="row">
+            <div class="col-12">
+                <h4>Add Item</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <label>Name</label><br>
+                <label  class="mt-10">Image</label><br>
+                <label class="mt-10">Price</label><br>
+                <label class="mt-10">Category</label><br>
+            </div>
+            <div class="col-8">
+                <input class="form-control" type="text">
+                <input class="form-control" type="file">
+                <input class="form-control" type="text">
+                <select class="form-control">
+                    <option value="">Category</option>
+                </select>
+                <br>
+                <div style="text-align: right;" >
+                    <button id="closeAdd" class="btn btn-danger" style="width: 30%;">Cancel</button> <a href="history.html" style="width: 30%;" class="btn btn-primary">Add</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
